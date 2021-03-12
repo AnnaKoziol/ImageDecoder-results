@@ -1,0 +1,103 @@
+All tests: my_simple_autoencoder.ipynb
+NO random seed until informed explicitelly
+
+-------------------------------- learn_rate = 0.1 --------------------------
+************************************
+CHNAGE NR of IMAGES AND BATCH SIZE:*
+************************************
+Linear 4 neurons:
+- batch_size=2, nr of images=2, loss = 0.0006
+- batch_size=3, nr of images=3, loss = 0.1100
+- batch_size=10, nr of images=10, loss = 0.2200
+
+Linear 6 neurons:
+- batch_size=2, nr of images=2, loss = 0.0024
+- batch_size=3, nr of images=3, loss = 0.0741
+- batch_size=10, nr of images=10, loss = 0.2500
+- batch_size=100, nr of images=100, loss = 0.2500
+- batch_size=1000, nr of images=1000, loss = 0.2500
+
+- batch_size=128, nr of images=1000, loss = 0.2500
+- batch_size=32, nr of images=1000, loss = 0.2500
+
+- batch_size=2, nr of images=1000, loss = 0.2500
+
+
+**********************************************
+KEEP BATCH SIZE, CHANGE LINEAR LAYER NEURONS:*
+**********************************************
+batch_size=6, nr of images=1000, wyniki po 15 epokach:
+- Linear 2, loss: 0.25 (0.2522 -> 0.2503)
+- Linear 4, loss: 0.25 
+- Linear 6, loss: 0.25 (0.2524 -> 0.2503)
+- Linear 8, loss: 0.25 (0.2528 -> 0.2503)
+- Linear 10, loss: 0.25 (0.2520 -> 0.2503)
+- Linear 12, loss: 0.25 (0.2524 -> 0.2506)
+- Linear 14, loss: 0.25 (0.2527 -> 0.2506)
+- Linear 24, loss: 0.25 (0.2518 -> 0.2502)
+- Linear 96, loss: 0.25 (0.2529 -> 0.2506)
+
+batch_size=3, nr of images=1000, wyniki po 15 epokach:
+- Linear 2, loss: 0.25 (0.2523 -> 0.2505)
+- Linear 8, loss: 0.25 (0.2527 -> 0.2505)
+- Linear 12, loss: 0.25 (0.2524 -> 0.2503)
+- Linear 16, loss: 0.25 (0.2522 -> 0.2504)
+- Linear 24, loss: 0.25 (0.2529 -> 0.2506)
+- Linear 48, loss: 0.25 (0.2528 -> 0.2507)
+
+
+--------------------------- learn_rate = 0.01 ----------------------------------
+**********************************************
+KEEP BATCH SIZE, CHANGE LINEAR LAYER NEURONS:*
+**********************************************
+batch_size=3, nr of images=1000, wyniki po 15 epokach:
+- Linear 2, loss: 0.25 (0.2516 -> 0.2500)
+- Linear 4, loss: 0.25 (0.2518 -> 0.2501)
+- Linear 8, loss: 0.25 (0.2518 -> 0.2500) 
+- Linear 12, loss: 0.25 (0.2517 -> 0.2499)
+- Linear 24, loss: 0.25 (0.2517 -> 0.2499)
+
+batch_size=36, nr of images=1000, wyniki po 15 epokach:
+- Linear 2, loss: 0.25 (0.2511 -> 0.2502)
+- Linear 6, loss: 0.25 (0.2511 - > 0.2501)
+- Linear 12, loss: 0.25 (0.2512 -> 0.2502)
+- Linear 24, loss: 0.25 (0.2511 -> 0.2502)
+
+
+-------------------------------- learn_rate = 0.1 again---------------------
+**********************************************
+KEEP BATCH SIZE, CHANGE LINEAR LAYER NEURONS:*
+**********************************************
+batch_size=3, nr of images 20, wyniki po 15 epokach:
+- Linar 2, loss 0.3185 -> 0.2011 const
+- Linear 4, loss 0.6929 -> 0.2129 const
+- Linear 6, loss 0.3095 -> 0.2077 const
+- Linear 8, loss 0.3895 -> 2056 const
+- Linear 12, loss 0.4055 -> 0.2083 const
+- Linear 16, loss 0.7081 -> 0.2082 const
+- Linear 24, loss 0.4708 -> 0.2088 const
+- Linear 48, loss 0.6131 -> 0.6200 const
+
+batch_size=3, nr of images 40, wyniki po 15 epokach:
+- Linear 2, loss 0.2612 -> 0.2463
+- Linear 4, loss 0.3345 -> 0.2457
+- Linear 6, loss 0.2654 -> 0.2458
+- Linear 8, loss 0.3058 -> 0.2462
+- Linear 12, loss 0.2717 -> 0.2465
+- Linear 16, loss 0.3006 -> 0.2465
+- Linear 24, loss 0.2603 -> 0.2465
+- Linear 48, loss 0.2735 -> 0.2465
+
+batch_size=3, nr of images 40, wyniki po 60 epokach:
+- Linear 2, loss 0.2715 -> 0.2409
+- Linear 4, loss 0.2604 -> 0.2409
+- Linear 6, loss 0.2614 -> 0.2409
+- Linear 8, loss 0.2620 -> 0.2409
+- Linear 12, loss 0.3006 -> 0.2397
+- Linear 16, loss 0.2654 -> 0.2392
+- Linear 24, loss 0.2613 -> 0.2409
+- Linear 48, loss 0.2650 -> 0.2408
+
+
+------------------- from now on, RANDOM SEED is set ------------------------
+
